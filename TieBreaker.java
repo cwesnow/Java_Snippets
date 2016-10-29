@@ -10,28 +10,28 @@ Class myGame {
         }
     }
 
-public static boolean tieBreaker(int target, int scoreA, int scoreB){
-    boolean result = true;
-    int highScore, lowScore;
+    public static boolean tieBreaker(int target, int scoreA, int scoreB){
+        boolean result = true;
+        int highScore, lowScore;
 
-    if (scoreA > scoreB) {
-        highScore = scoreA;
-        lowScore = scoreB;
-    } else {
-        highScore = scoreB;
-        lowScore = scoreA;
-    }
-
-    if( highScore < target ) { result = false; }
-    else {
-        if (
-        lowScore <= target -2 && 
-        lowScore <= highScore -2  )
-        { 
-        result = false;
+        if (scoreA > scoreB) {
+            highScore = scoreA;
+            lowScore = scoreB;
+        } else {
+            highScore = scoreB;
+            lowScore = scoreA;
         }
+
+        if( highScore < target ) { result = false; }
+        else {
+            if (
+            lowScore <= target -2 && 
+            lowScore <= highScore -2  )
+            { 
+            result = false;
+            }
+        }
+    return result;
     }
-return result;
-}
     
 }
