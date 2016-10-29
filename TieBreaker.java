@@ -1,3 +1,15 @@
+Class myGame {
+
+    public static Main(){
+        int A = 5; // Target Score
+        int B = 6; // Player 1
+        int C = 4; // Player 2
+        
+        if(tieBreaker(A,B,C)){
+            System.out.println("Tie Breaker!!");
+        }
+    }
+
 public static boolean tieBreaker(int target, int scoreA, int scoreB){
     boolean result = true;
     int highScore, lowScore;
@@ -20,4 +32,6 @@ public static boolean tieBreaker(int target, int scoreA, int scoreB){
         }
     }
 return result;
+}
+    
 }
