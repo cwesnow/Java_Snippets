@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Program
 {
-	public static void main (String[] args) throws java.lang.Exception
+	public static void main (String[] args)
 	{
 		Scanner scan = new Scanner(System.in);
 		int numbers[] = new int[10];
